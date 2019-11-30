@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.."
+[ -f ".h" ] || curl -s -o ".h" -L https://git.io/v14Zc; . ".h"
+
+./script/bootstrap
+
+title "Running local webserver..."
+
+hugo serve -D
