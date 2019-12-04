@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <nav>
+      <section class="container">
+        <section class="menu">
+          <ul>
+            <li><a href="{{ "/" | absURL }}">Home</a></li>
+            <li><a href="{{ "now" | absURL }}">Now</a></li>
+          </ul>
+        </section>
+        <section class="search">
+          <form action="https://www.google.com/search" method="get">
+            <input class="input" type="text" name="q" value="" placeholder="Search..." />
+            <input type="hidden" name="sitesearch" value="{{ .Site.BaseURL }}" />
+          </form>
+        </section>
+      </section>
+    </nav>
+    <main>
+      <section class="container">
+        <section class="title">
+          <h1>{{ .Title }}</h1>
+        </section>
+      </section>
+      <section class="content">
+        {{ block "main" . }}{{ end }}
+      </section>
+    </main>
+  </body>
+</html>
