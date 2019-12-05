@@ -1,1 +1,3 @@
 baseURL = "https://gaston.life/"
+[taxonomies]
+  category = "categories"
