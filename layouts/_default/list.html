@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article>
+  <header>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </header>
+  <hr />
+  <main>
+    {{ .Content }}
+
+    {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+    <h1>{{ humanize $key }}</h1>
+    <ul>
+      {{ range ($taxonomy.Pages.ByParam "rating").Reverse }}
+      {{ .Render "li" }}
+      {{ end }}
+    </ul>
+    {{ end }}
+  </main>
+</article>
+{{ end }}

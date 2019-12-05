@@ -1,5 +1,13 @@
 {{ define "main" }}
-  <article>
+<article>
+  <header>
+    {{ .Render "header" }}
+  </header>
+  <aside>
+    {{ .TableOfContents }}
+  </aside>
+  <main>
     {{ .Content }}
-  </article>
+  </main>
+</article>
 {{ end }}
