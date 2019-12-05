@@ -14,9 +14,9 @@ Working towards life with less anxiety, less clutter, and less regrets.
 >
 > — Marcus Aurelius
 
-I'm a lifelong learner, [programmer][programmer], [photographer][photographer].
-You can also find me on [twitter][twitter], [stackoverflow][stackoverflow] and
-[linkedin][linkedin].
+I'm a [lifelong learner][books], [programmer][programmer],
+[photographer][photographer]. You can also find me on [twitter][twitter],
+[stackoverflow][stackoverflow] and [linkedin][linkedin].
 
 What am I doing now? See my [now][now] page.
 
@@ -25,6 +25,7 @@ What am I doing now? See my [now][now] page.
 As an [introvert][intj], the best way to contact me is one-on-one via
 [email][email] (I keep an empty inbox).
 
+[books]: {{< ref "books" >}}
 [email]: mailto:gjorquera@gmail.com
 [intj]: http://www.16personalities.com/profiles/5649da05e7c95
 [linkedin]: https://linkedin.com/in/gastonjorquera
