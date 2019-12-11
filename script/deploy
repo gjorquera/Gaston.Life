@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.."
+[ -f ".h" ] || curl -s -o ".h" -L https://git.io/v14Zc; . ".h"
+
+./script/bootstrap
+
+title "Deploying updates to GitHub..."
+
+rm -rf public/*
+hugo
+cd public
+git add .
+git commit -m "Site build $(date)"
+git push origin master
