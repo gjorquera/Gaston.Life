@@ -5,6 +5,8 @@
     <title>{{ .Title }}</title>
     {{ $css := resources.Get "css/main.sass" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.Permalink }}">
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
   </head>
   <body>
     <nav class="container navbar" role="navigation" aria-lable="main navigation">
