@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>{{ .Title }}</title>
+    {{ $style := resources.Get "css/main.sass" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
   </head>
   <body>
     <nav>
