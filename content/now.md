@@ -17,7 +17,7 @@ unexpected things happen.
 
 # Core Habits
 
-- Eat. Plan and prepare healthy means and keep track.
+- Eat. Plan and prepare daily healthy meals and keep track.
 - Exercise. Do calisthenics and jog for 20 minutes to maintain.
 - Work. Do enough to feel good about my work but remember that there will always
   be more work than time.
