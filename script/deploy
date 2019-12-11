@@ -10,5 +10,9 @@ rm -rf public/*
 hugo
 cd public
 git add .
-git commit -m "Site build $(date)"
+DATE="$(date)"
+git commit -m "Site build $DATE"
 git push origin master
+cd ..
+git add public
+git commit -m "Site build $DATE"
