@@ -1,12 +1,12 @@
 {{ define "main" }}
 <article>
-  <header>
+  <header class="content">
     {{ .Render "header" }}
   </header>
-  <aside>
+  <aside class="content">
     {{ .Render "toc" }}
   </aside>
-  <main>
+  <main class="content">
     {{ .Content }}
   </main>
 </article>

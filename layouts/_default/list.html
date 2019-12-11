@@ -1,10 +1,10 @@
 {{ define "main" }}
 <article>
-  <header>
-    <h1>{{ .Title }}</h1>
+  <header class="content">
+    <h1 class="title is-1">{{ .Title }}</h1>
     <p>{{ .Description }}</p>
   </header>
-  <main>
+  <main class="content">
     {{ .Content }}
 
     {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
