@@ -8,12 +8,15 @@
     {{ .Content }}
 
     {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+    {{ $pages := where $taxonomy.Pages ".Type" $.Page.Type }}
+    {{ if $pages }}
     <h1>{{ humanize $key }}</h1>
     <ul>
-      {{ range ($taxonomy.Pages.ByParam "rating").Reverse }}
+      {{ range ($pages.ByParam "rating").Reverse }}
       {{ .Render "li" }}
       {{ end }}
     </ul>
+    {{ end }}
     {{ end }}
   </main>
 </article>
