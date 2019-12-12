@@ -1,4 +1,5 @@
 baseURL: https://gaston.life/
+enableGitInfo: true
 
 taxonomies:
   category: categories
