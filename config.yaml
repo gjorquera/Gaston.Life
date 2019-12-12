@@ -7,6 +7,10 @@ params:
 taxonomies:
   category: categories
 
+markup:
+  highlight:
+    style: solarized-light
+
 related:
   threshold: 80
   includeNewer: true
