@@ -3,9 +3,11 @@
   <header class="content">
     {{ .Render "header" }}
   </header>
+  {{ if .Param "toc" }}
   <aside class="content">
     {{ .Render "toc" }}
   </aside>
+  {{ end }}
   <main class="content">
     {{ .Content }}
   </main>
