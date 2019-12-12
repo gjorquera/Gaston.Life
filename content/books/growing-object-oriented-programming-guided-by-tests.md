@@ -1,7 +1,8 @@
 ---
 title: Growing Object Oriented Software, Guided by Tests
 author: Steve Freeman and Nat Pryce
-categories: ["programming"]
+categories:
+- programming
 description: >
   Using a simple language, clear ideas, and concrete examples, it builds a
   wealth of knowledge. It's very deep, touching hard topics of software

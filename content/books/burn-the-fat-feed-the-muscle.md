@@ -1,7 +1,8 @@
 ---
 title: Burn the Fat, Feed the Muscle
 author: Tom Venuto
-categories: ["athletics"]
+categories:
+- athletics
 description: >
   Burn fat through workouts and feeding your muscles with proper nutrition —
   improving your body composition — instead of starving your body. It's not a

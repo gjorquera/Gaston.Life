@@ -1,7 +1,8 @@
 ---
 title: The Freedom Handbook
 author: Jeff Hirz
-categories: ["stoicism"]
+categories:
+- stoicism
 description: >
   You can achieve personal freedom. It doesn't depend on external factors, only
   on you. Life, as it is today, is full of unnecessary burdens. Constantly clean

@@ -1,7 +1,8 @@
 ---
 title: Sure You're Joking, Mr Feynman!
 author: Richard Feynman
-categories: ["other"]
+categories:
+- other
 description: >
   Feynman's stories are awesome. His curiosity and focused personality allowed
   him to pursue a lot of interesting—but arguably useless—experiences that ended

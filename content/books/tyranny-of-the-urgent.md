@@ -1,7 +1,8 @@
 ---
 title: Tyranny of the Urgent
 author: Charles Hummel
-categories: ["productivity"]
+categories:
+- productivity
 description: >
   How we allow the urgency of tasks dictate our lives, taking all our time,
   whether we want it or not. Time is best spent doing important things. Looking

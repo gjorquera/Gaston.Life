@@ -1,7 +1,8 @@
 ---
 title: Tribes
 author: Seth Godin
-categories: ["relationships"]
+categories:
+- relationships
 description: >
   Being part of something is a natural desire. A group with a shared vision
   becomes a tribe and tribes needs leadership. This book is about what it means

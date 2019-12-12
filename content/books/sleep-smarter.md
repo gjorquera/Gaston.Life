@@ -1,7 +1,8 @@
 ---
 title: Sleep Smarter
 author: Shawn Stevenson
-categories: ["athletics"]
+categories:
+- athletics
 description: >
   21 tips on how to sleep better. Some of the tips are common sense and some are
   counter-intuitive. Proposes a useful 14 day plan to apply almost all tips.

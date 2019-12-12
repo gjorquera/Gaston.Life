@@ -1,7 +1,8 @@
 ---
 title: Some Thoughts About Relationships
 author: Colin Wright
-categories: ["relationships"]
+categories:
+- relationships
 description: >
   Relationships are hard, and cultural knowledge and archetypes aren't helping.
   Talks about relationships in a rational way. Even though it might sound

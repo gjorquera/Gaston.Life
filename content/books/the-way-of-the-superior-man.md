@@ -1,7 +1,8 @@
 ---
 title: The Way of the Superior Man
 author: David Deida
-categories: ["relationships"]
+categories:
+- relationships
 description: >
   About the balance (or polarity) between men and women. Everyone knows that men
   and women are different but this book explains it—in a repetitive way so that

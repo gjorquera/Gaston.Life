@@ -1,7 +1,8 @@
 ---
 title: The Universe Doesn't Give a Flying Fuck About You
 author: Johnny Truant
-categories: ["stoicism"]
+categories:
+- stoicism
 description: >
   Everything you do, and don't do, is insignificant in the grand scheme of
   things. Eventually, nobody, and then nothing, will care. Stop worrying and

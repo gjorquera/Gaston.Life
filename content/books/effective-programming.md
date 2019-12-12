@@ -1,7 +1,8 @@
 ---
 title: Effective Programming
 author: Jeff Atwood
-categories: ["programming"]
+categories:
+- programming
 description: >
   Very well structured with advice on how to improve as a programmer in
   different aspects; writing better code, dealing with customers, and improving
