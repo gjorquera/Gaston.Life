@@ -10,79 +10,97 @@ date: 2019-12-14
 
 ## What is Hugo?
 
-Hugo is a static HTML generator to help you build and maintain complex static
-HTML sites from source code. With Hugo you have to define the structure of your
-site only once and then it allows you to focus purely on the content.
+[Hugo](https://gohugo.io/) is a CLI tool to build and maintain static HTML sites
+from source code. With Hugo you define the structure and style of the site once
+so that you can focus on the content. After you have an initial structure,
+style, and content, Hugo will be able to automatically include partials and
+layouts into pages, generate sitemaps, and build lists based completely on the
+content you write.
 
-After you have the structure defined, Hugo will be able to include partials,
-build layouts, automatically generate sitemaps, and build index pages based
-completely on the content you have authored.
+Hugo builds the following static HTML files:
 
-### Features
+```plain
+├── articles
+│   ├── first
+│   │   └── index.html
+│   ├── index.html
+│   └── index.xml
+├── index.html
+├── index.xml
+├── now
+│   └── index.html
+└── sitemap.xml
+```
 
-* Incredibly fast. It takes less than a second to build sites with dozens or
-  hundreds of pages.
-* Sane directory layout. Everything has a place and there's a place for
-  everything, and it makes sense.
-* Easy to install. All it needs is one CLI command and that's it.
+From the following source code:
 
-### Why Another Guide?
-
-I started migrating my site from Jekyll to Hugo and found out that [Hugo's
-quickstart](https://gohugo.io/getting-started/quick-start/) is too magical for
-me. I wanted to know how each moving part worked so that I could use them to my
-benefit.
-
-This guide attempts to explain how the different moving parts work together.
+```plain
+├── config.toml
+├── content
+│   ├── _index.md
+│   ├── articles
+│   │   ├── _index.md
+│   │   └── first.md
+│   └── now.md
+├── layouts
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── single.html
+│   └── index.html
+└── script
+    ├── bootstrap
+    └── server
+```
 
 ### What About Jekyll?
 
-I used [Jekyll](jekyllrb.com/) for a few years. It opened the doors for me to
-the idea of building static HTML sites to host cheaply or for free.
+I used [Jekyll](jekyllrb.com/) for a few years but I moved to Hugo for the
+following reasons:
 
-But I moved to Hugo for the same reasons why I think Hugo is a great tool:
-speed, organization, and convenience:
-
-* Speed: Jekyll started taking several seconds to build my site which forced me
-  to make a change, wait for the backend to rebuild the site, and then refresh
-  the page. With Hugo the refresh even happens automatically.
-* Organization: Jekyll was initially built to handle blogs with posts based on
-  dates and my site is more like articles organized by categories. Hugo works
-  out of the box for this organization style.
-* Convenience: Having to install Ruby and rbenv and Rubygems only to build my
-  static site was getting very annoying. With Hugo I only have to do `brew
-  install|upgrade hugo`.
+* Speed: Jekyll started taking several seconds to build my site which slowed my
+  development workflow. With Hugo the refresh happens almost instantly.
+* Organization: Jekyll was initially built for date based blog posts and my site
+  is closer to a category based knowledge base. Hugo works out of the box for
+  this organization style.
+* Convenience: Having to install rbenv, Ruby, and Rubygems only to run Jekyll
+  was getting very annoying. With Hugo this is enough: `brew install hugo`.
 
 Jekyll does provide more flexibility and the option to extend the backend engine
-but I've found out that Hugo's defaults are good enough for me while Jekyll's
-defaults weren't.
+but I've found out that Hugo's defaults are enough.
+
+### Why Another Guide?
+
+When migrating my site from Jekyll to Hugo I found out that [Hugo's
+quickstart](https://gohugo.io/getting-started/quick-start/) is too short and
+magical and the complete documentation is too generic.
+
+This guide explains how to build a real world sample personal site from scratch.
 
 ## Walking Skeleton
 
-The first step will be to go from nothing to a "Hello, World!" deployed and
-live without magic.
+The [GOOS]({{< ref "books/growing-object-oriented-programming-guided-by-tests"
+>}}) book introduced the concept of a walking skeleton. The absolute minimum
+code that can be successfully deployed. In our case, this will be a production
+ready, deployed, and ugly "Hello, World!" site.
 
-### Install Hugo
+### Bare bones
+
+#### Install Hugo
 
 Follow [Hugo's quick install](https://gohugo.io/getting-started/installing)
-instructions for your platform.
-
-I use macOS so I ran:
+instructions for your platform. I use macOS so I ran:
 
 ```plain
 $ brew install hugo
-```
-
-```plain
 $ hugo version
 Hugo Static Site Generator v0.61.0/extended darwin/amd64 BuildDate: unknown
 ```
 
-### New Empty Site
+#### New Site
 
-Use Hugo to create the minimum necessary files for a new empty site. The name
-doesn't have to follow any convention, it can be anything. This guide will use
-`my-personal-site`:
+Create the new, empty site. The site name doesn't have to follow any convention,
+it can be anything. In this guide I will use `my-personal-site`:
 
 ```plain
 $ hugo new site my-personal-site
@@ -100,8 +118,7 @@ Just a few more steps and you're ready to go:
 Visit https://gohugo.io/ for quickstart guide and full documentation.
 ```
 
-If you want to understand how Hugo works, then don't download a theme and don't
-use `hugo new`.
+Don't download a theme and don't use `hugo new`. It's too magical.
 
 #### Initialize Git
 
@@ -116,20 +133,12 @@ $ git commit -m 'Initial commit'
 
 #### Installation
 
-Several years ago GitHub proposed using a set of [standardized
+GitHub proposed using a set of [standardized
 scripts](https://github.com/github/scripts-to-rule-them-all) to interact with a
-codebase. I've found this useful so I'll do the same here.
-
-I wrote [script helpers](https://github.com/gjorquera/script-helpers) to make
-writing these scripts easier and that's why every script will start with:
-
-```bash
-#!/usr/bin/env bash
-cd "$(dirname $0)/.."
-[ -f ".h" ] || curl -s -o ".h" -L https://git.io/v14Zc; . ".h"
-```
-
-To avoid adding script helper files into your codebase, run:
+codebase. I've found this useful so I'll do the same here. Additionally, I wrote
+[helpers](https://github.com/gjorquera/script-helpers) to make writing these
+scripts easier, which requires you to ignore the following automatically
+generated files:
 
 ```plain
 $ echo ".cache.*" >> .gitignore
@@ -138,7 +147,7 @@ $ echo ".h" >> .gitignore
 
 #### Bootstrap
 
-Write the following `script/bootstrap` file:
+Write this `script/bootstrap` file:
 
 ```bash
 #!/usr/bin/env bash
@@ -154,7 +163,7 @@ ensure "which hugo"
 
 #### Server
 
-Now write the following `script/server` file:
+Write this `script/server` file:
 
 ```bash
 #!/usr/bin/env bash
@@ -209,29 +218,26 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-Now open http://localhost:1313 to see your brand you empty site.
+Open [http://localhost:1313](http://localhost:1313) to see your new empty site.
 
 #### Commit
 
 ```plain
 $ git add .
-$ git commit -m 'Add management scripts'
+$ git commit -m 'Add scripts to rule them all'
 ```
 
 ### Homepage
 
-Let's build the home page now.
-
-Hugo assigns a type to every page in your site. There are a few already defined
-content types and new content types can be defined based on the directory
-structure.
-
-The homepage is a special page (with its layout) different from all other single
-pages. This is because homepages usually have a different style.
+Hugo assigns a [content type](https://gohugo.io/content-management/types/) to
+every page in your site. There are a few pre-defined content types and new
+content types can be defined based on the directory structure. The
+[homepage](https://gohugo.io/templates/homepage/) is a special content type with
+its own layout different from all other single pages.
 
 #### Content
 
-Write the following `content/_index.md` file:
+Write this `content/_index.md` file:
 
 ```md
 ---
@@ -247,19 +253,15 @@ Welcome to my personal site.
 You can contact me via e-mail but I don't have one yet.
 ```
 
-More information [about content
-types](https://gohugo.io/content-management/types/) and [homepage
-template](https://gohugo.io/templates/homepage/).
-
 #### Baseof
 
 After saving the previous file, Hugo will rebuild the site but still nothing
 will show. This is because we have content but no layouts to render the content.
 
-The `baseof` layout is the base of all layouts and where the main HTML5 markup
-should live.
+The `baseof` layout is the base of all layouts, where the main HTML5 markup will
+live.
 
-Write the following `layouts/_default/baseof.html` file:
+Write this `layouts/_default/baseof.html` file:
 
 ```html
 <!doctype html>
@@ -276,23 +278,22 @@ Write the following `layouts/_default/baseof.html` file:
 
 #### Layout
 
-The `baseof` layout is not enough. This is the layout for all pages, we now need
-the layout for the homepage.
+The `baseof` is the layout all pages, we still need the specific layout for the
+homepage.
 
-Write the following `layouts/index.html` file:
+Write this `layouts/index.html` file:
 
 ```html
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-
 {{ .Content }}
 {{ end }}
 ```
 
-You can now refresh http://localhost:1313 and you should see an ugly hello
-world.
+You can now refresh [http://localhost:1313](http://localhost:1313) and you
+should see the ugly "Hello, World!".
 
-It is safe to keep the local webserver running and the tab open because Hugo
+It is now safe to keep the local webserver running and the tab open because Hugo
 will rebuild and refresh everything anytime it detects a change.
 
 #### Commit
@@ -302,18 +303,26 @@ $ git add .
 $ git commit -m 'Add hello world homepage and layout'
 ```
 
-### Deployment
+### Deployment Strategy
 
-The last step of the walking skeleton is deploying your brand new static site to
-live.
-
-You can host personal sites in GitHub (called [GitHub
-Pages](https://pages.github.com/)) but to do that the whole codebase has to be
-the static HTML site.
+The last step of the walking skeleton is deploying to live. You can host
+personal sites in GitHub (called [GitHub Pages](https://pages.github.com/)) but
+to do that the whole codebase has to be the static HTML site.
 
 To achieve this with Hugo, we will follow [Hugo's
 guidance](https://gohugo.io/hosting-and-deployment/hosting-on-github/) and build
-the static HTML site into a GitHub user pages codebase.
+the static HTML site into a new GitHub user pages repository.
+
+#### Config File
+
+Make sure the configuration file points to your GitHub user pages repository and
+has the write title. Update the `config.toml` file:
+
+```toml {hl_lines=[1,3]}
+baseURL = "https://<username>.github.io/"
+languageCode = "en-us"
+title = "My Personal Site"
+```
 
 #### Production Codebase
 
@@ -323,10 +332,10 @@ default README file.
 Clone the repository as a submodule into `public`:
 
 ```plain
-$ git submodule add -b master git@github.com:<username>/<username>.github.io.git public"
+$ git submodule add -b master git@github.com:<username>/<username>.github.io.git public
 ```
 
-Write the following `script/deploy` file:
+Write this `script/deploy` file:
 
 ```bash
 #!/usr/bin/env bash
@@ -337,41 +346,260 @@ set -e
 
 ./script/bootstrap
 
-title "Deploying updates to GitHub..."
+DATE="$(date)"
+
+title "Building site..."
 
 rm -rf public/*
 hugo
 cd public
 git add .
-DATE="$(date)"
 git commit -m "Site build $DATE"
+
+title "Deploying site to GitHub..."
+
 git push origin master
 cd ..
 git add public
 git commit -m "Site build $DATE"
 ```
 
-Run `./script/deploy` and watch your site get built and pushed into your GitHub
-Pages repository.
+#### Commit and Deploy
+
+```plain
+$ git add .
+$ git commit -m 'Add deploy script'
+$ ./script/deploy
+```
+
+Watch your site get built and pushed into your GitHub Pages repository.
 
 You can now go to `https://<username>.github.io` and see your brand new site.
 
-## Single Pages
+## Main Content
 
-## Page Collections
+### Single Pages
 
-### Taxonomies
+Single pages are pages without a collection or a page within a collection. For
+example, if you want to show one article, or one blog post, or a contact page,
+all of those are single pages.
 
-### List Layout
+#### NowNowNow
 
-## Last Details
+[NowNowNow](https://nownownow.com/) is an initiative by Derek Sivers for sites
+with a `/now` page. Let's add ours.
 
-### Sitemap
+Write this `content/now.md` file:
 
-### Related Content
+```md
+---
+title: What I'm Doing Right Now
+description: |
+  A nownownow page.
+---
 
-### Favicon
+_(This is a [now](http://nownownow.com/about) page.)_
 
-### Social Tags
+## Hugo
 
-### MathJax
+Learning how to build a personal site with Hugo.
+```
+
+#### Layout
+
+Even though we have a homepage layout, we still don't have a layout for single
+pages.
+
+Write this `layouts/_default/single.html`:
+
+```html
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+{{ end }}
+```
+
+You can now visit [http://localhost:1313/now](http://localhost:1313/now).
+
+#### Menu
+
+Now we need a way to click our way through the site, to go from the homepage to
+the now page.
+
+Update the `layouts/_default/baseof.html` file:
+
+```html {hl_lines=["8-13"]}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a class="navbar-item" href="{{ "/" | absURL }}">Home</a></li>
+        <li><a class="navbar-item" href="{{ "now/" | absURL }}">Now</a></li>
+      </ul>
+    </nav>
+
+    {{ block "main" . }}{{ end }}
+  </body>
+</html>
+```
+
+#### Commit and Deploy
+
+```plain
+$ git add .
+$ git commit -m 'Add a now single page and layout'
+$ ./script/deploy
+```
+
+### Page Collections
+
+You can define different types of [content
+types](https://gohugo.io/content-management/types/) by following a directory
+structure convention inside of `content/`:
+
+```plain
+content/
+├── type1/           < type1 content type
+│   ├── _index.md    < list page
+│   ├── content11.md < single page of type type1
+│   └── content12.md < single page of type type1
+├── type2/           < type2 content type
+│   ├── _index.md    < list page
+│   ├── content21.md < single page of type type1
+└── _index.md        < homepage
+```
+
+#### Articles
+
+Our site will have articles, which are grouped by categories and whose published
+date are not important.
+
+Write this `content/articles/_index.md` file:
+
+```md
+---
+title: Articles
+description: >
+  All the articles since the beginning of time.
+---
+```
+
+And this `content/articles/first.md` file:
+
+```md
+---
+title: First Article
+description: >
+  The first article I've ever written.
+category:
+- meta
+---
+
+Introductory paragraph.
+
+## Interesting Title
+
+Some more interesting stuff.
+```
+
+#### List Layout
+
+You can now access to
+[http://localhost:1313/articles/first](http://localhost:1313/articles/first) but
+[http://localhost:1313/articles](http://localhost:1313/articles) is blank
+because we don't have a list layout yet.
+
+Write this `layouts/_default/list.html` file:
+
+```html
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>{{ .Description }}</p>
+
+{{ .Content }}
+
+<ul>
+  {{ range .Pages }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
+{{ end }}
+```
+
+#### Menu
+
+We need to add the new articles section to the menu.
+
+Update the `layouts/_default/baseof.html` file:
+
+```html {hl_lines=[11]}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a class="navbar-item" href="{{ "/" | absURL }}">Home</a></li>
+        <li><a class="navbar-item" href="{{ "articles/" | absURL }}">Articles</a></li>
+        <li><a class="navbar-item" href="{{ "now/" | absURL }}">Now</a></li>
+      </ul>
+    </nav>
+
+    {{ block "main" . }}{{ end }}
+  </body>
+</html>
+```
+
+#### Commit and Deploy
+
+```plain
+$ git add .
+$ git commit -m 'Add an article and a list layout'
+$ ./script/deploy
+```
+
+### Not Found Page
+
+GitHub Pages supports customizing the "not found" page.
+
+Write this `content/404.md` file:
+
+```md
+---
+title: Not Found
+description: |
+  Page not found.
+url: /404.html
+---
+
+The page you're looking for does not exist.
+```
+
+#### Commit and Deploy
+
+```plain
+$ git add .
+$ git commit -m 'Add a 404 page'
+$ ./script/deploy
+```
+
+## Next Steps
+
+We now have a fully functional site where you can:
+
+* Add single pages.
+* Add new articles.
+
+But Hugo has many additional features. I encourage you to dive deep into the
+[official documentation](https://gohugo.io/documentation/).
