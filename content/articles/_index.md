@@ -1,5 +1,5 @@
 ---
 title: Articles
 description: >
-  Random collection of thoughts.
+  Random collection of software engineering thoughts.
 ---
