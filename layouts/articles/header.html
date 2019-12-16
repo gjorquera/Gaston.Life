@@ -1,2 +1,4 @@
-<h1>{{ .Title }}</h1>
-<p>{{ .Description }}</p>
+<small>
+  Reading time: {{ .ReadingTime }} min(s)
+  · Date published: {{ .Date.Format "January 2, 2006" }}
+</small>

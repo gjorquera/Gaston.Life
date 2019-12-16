@@ -1,8 +1,6 @@
-<h1>{{ .Title }}</h1>
-<p>{{ .Description }}</p>
 <small>
   My rating: {{ .Params.Rating }}/5
-  · {{ .ReadingTime }} min(s)
-  · {{ .Date.Format "January 2, 2006" }}
+  · Reading time: {{ .ReadingTime }} min(s)
+  · Date read: {{ .Date.Format "January 2, 2006" }}
   · <a href="{{ .Params.Amazon }}">Amazon</a>
 </small>

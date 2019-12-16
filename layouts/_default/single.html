@@ -1,6 +1,8 @@
 {{ define "main" }}
 <article>
   <header class="content">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
     {{ .Render "header" }}
   </header>
   {{ if .Param "toc" }}
