@@ -7,7 +7,3 @@ set -e
 title "Checking dependencies..."
 
 ensure "which hugo"
-
-title "Setting up GitHub remote..."
-
-ensure "git submodule | grep public || git submodule add -b master git@github.com:gjorquera/gjorquera.github.io.git public"
