@@ -1,8 +1,7 @@
 ---
 title: Time Well Spent
 author: Mike Burns
-categories:
-- productivity
+category: productivity
 description: >
   Time management techniques has nothing to do with managing time. Spend time
   doing the right things instead of doing many things. Being busy isn't

@@ -1,8 +1,7 @@
 ---
 title: Clean Coder
 author: Robert Martin
-categories:
-- programming
+category: programming
 description: >
   How to be a professional! Encourages you to take responsibility and be a
   better professional in this young industry. The examples are great to help you

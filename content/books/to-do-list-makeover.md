@@ -1,8 +1,7 @@
 ---
 title: To-Do List Makeover
 author: S. J. Scott
-categories:
-- productivity
+category: productivity
 description: >
   No new techniques, rather a mix of several ideas from other places. Its
   accomplishment is a simple and actionable system that works. I absolutely like

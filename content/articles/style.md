@@ -1,7 +1,6 @@
 ---
 title: Site Style
-categories:
-- meta
+category: meta
 description: >
   Sample of basic Markdown syntac and Math typesetting that can be used in
   content files.

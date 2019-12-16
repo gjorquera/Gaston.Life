@@ -1,8 +1,7 @@
 ---
 title: Effective Java
 author: Joshua Bloch
-categories:
-- programming
+category: programming
 description: >
   How to write better Java. Has multiple tips and idioms to create saner and
   clearer applications, avoiding that feeling of drowning over all the options

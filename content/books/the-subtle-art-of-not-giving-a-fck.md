@@ -1,8 +1,7 @@
 ---
 title: The Subtle Art of Not Giving a F*ck
 author: Mark Manson
-categories:
-- stoicism
+category: stoicism
 description: >
   You're already making decisions and choosing, all the time. You just need to
   change what to give a fuck about. It's going to suck. You're going to be

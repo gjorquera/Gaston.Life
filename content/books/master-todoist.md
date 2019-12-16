@@ -1,8 +1,7 @@
 ---
 title: Master Todoist
 author: S. J. Scott
-categories:
-- productivity
+category: productivity
 description: >
   Explains how to use one of the best task tracking tools out there, Todoist,
   with the GTD philosophy. It doesn't have anything new but it does a good job

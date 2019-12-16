@@ -1,8 +1,7 @@
 ---
 title: You Are Dying, and Your World is a Lie
 author: Johnny Truant
-categories:
-- stoicism
+category: stoicism
 description: >
   A short guide on the importance of doing important things. The time you spend
   worrying about things is time you're never getting back. Use your time to test

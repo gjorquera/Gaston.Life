@@ -1,8 +1,7 @@
 ---
 title: The Daily Stoic
 author: Ryan Holiday and Stephen Hanselman
-categories:
-- stoicism
+category: stoicism
 description: >
   A lot of stoic quotes explained and brought to our daily lives. Even  though
   you should read this book on a daily basis, I couldn’t do it. I would either

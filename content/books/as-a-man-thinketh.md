@@ -1,8 +1,7 @@
 ---
 title: As a Man Thinketh
 author: James Allen
-categories:
-- stoicism
+category: stoicism
 description: >
   Highly motivational, although without supporting studies or evidence, to
   convince you to improve your life. You're the sum of your thoughts; change

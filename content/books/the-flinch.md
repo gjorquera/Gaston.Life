@@ -1,8 +1,7 @@
 ---
 title: The Flinch
 author: Julien Smith
-categories:
-- stoicism
+category: stoicism
 description: >
   A short book on how the flinch is holding you back. The flinch is that
   instinctive reaction you get whenever you want or need to do something. All it

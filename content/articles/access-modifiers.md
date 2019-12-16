@@ -1,7 +1,6 @@
 ---
 title: Access Modifiers as Design
-categories:
-- programming
+category: programming
 description: >
   The public interface of a class should be treated with as much delicacy as a
   public web service API. The visibility of class' members shouldn't be a

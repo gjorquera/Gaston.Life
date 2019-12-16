@@ -1,8 +1,7 @@
 ---
 title: Make it Stick
 author: Peter Brown
-categories:
-- other
+category: other
 description: >
   Most known ways to study doesn't work. This book explains different techniques
   to improve your learning; full of references and stories to support their

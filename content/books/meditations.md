@@ -1,8 +1,7 @@
 ---
 title: Meditations
 author: Marcus Aurelius and Gregory Hays
-categories:
-- stoicism
+category: stoicism
 description: >
   It's amazing how one of the most important person in the world, who lived more
   than 18 centuries ago, had to deal with the same problems that we deal on a

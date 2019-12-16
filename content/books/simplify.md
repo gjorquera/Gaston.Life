@@ -1,8 +1,7 @@
 ---
 title: Simplify
 author: Joshua Becker
-categories:
-- minimalism
+category: minimalism
 description: >
   Focusing on a simpler life helps build a better life. A life with less stress
   and less worries. A life with more meaning and joy. Impress your friends with

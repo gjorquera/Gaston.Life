@@ -1,8 +1,7 @@
 ---
 title: The Power of No
 author: James and Claudia Altucher
-categories:
-- minimalism
+category: minimalism
 description: >
   Emphasizes the importance and benefits of saying 'no' to situations that can
   cause us harm. It doesn't go into the details of how to actually say 'no'.
