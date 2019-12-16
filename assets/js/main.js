@@ -10,4 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  const $linkableHeadings = document.querySelectorAll('main h2[id], main h3[id]');
+  $linkableHeadings.forEach(el => {
+    const anchor = document.createElement('a');
+    anchor.setAttribute('href', '#' + el.id);
+    anchor.innerText = ' #';
+    el.appendChild(anchor);
+  });
 });
