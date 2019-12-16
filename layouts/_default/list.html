@@ -7,13 +7,16 @@
   <main class="content">
     {{ .Content }}
 
-    {{ range .Pages.GroupByParam "category" }}
-    <h1>{{ humanize .Key | title }}</h1>
+    {{ $all_pages := .Pages }}
+    {{ range $category := where $.Site.Data.categories "type" .Type }}
+    {{ with $pages := where $all_pages ".Params.category" $category.name }}
+    <h1>{{ humanize $category.name | title }}</h1>
     <ul>
-      {{ range (.Pages.ByDate.ByParam "rating").Reverse }}
+      {{ range ($pages.ByDate.ByParam "rating").Reverse }}
       {{ .Render "li" }}
       {{ end }}
     </ul>
+    {{ end }}
     {{ end }}
   </main>
 </article>
