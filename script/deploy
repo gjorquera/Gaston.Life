@@ -6,14 +6,18 @@ set -e
 
 ./script/bootstrap
 
-title "Deploying updates to GitHub..."
+DATE="$(date)"
+
+title "Building site..."
 
 rm -rf public/*
 hugo
 cd public
 git add .
-DATE="$(date)"
 git commit -m "Site build $DATE"
+
+title "Deploying site to GitHub..."
+
 git push origin master
 cd ..
 git add public
