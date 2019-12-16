@@ -29,6 +29,4 @@ unexpected things happen.
 - Work. µvim and software maintainability.
 - Sharing. Consolidate all my learnings and results here.
 
-Last updated on December 04, 2019.
-
 [now]: http://nownownow.com/about
