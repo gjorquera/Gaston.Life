@@ -79,7 +79,7 @@ This guide explains how to build a real world sample personal site from scratch.
 
 ## Walking Skeleton
 
-The [GOOS]({{< ref "books/growing-object-oriented-programming-guided-by-tests"
+The [GOOS]({{< ref "books/growing-object-oriented-software-guided-by-tests"
 >}}) book introduced the concept of a walking skeleton. The absolute minimum
 code that can be successfully deployed. In our case, this will be a production
 ready, deployed, and ugly "Hello, World!" site.
