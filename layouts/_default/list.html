@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article>
   <header class="content">
-    <h1 class="title is-1">{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
   </header>
   <main class="content">
@@ -10,7 +10,7 @@
     {{ $all_pages := .Pages }}
     {{ range $category := where $.Site.Data.categories "type" .Type }}
     {{ with $pages := where $all_pages ".Params.category" $category.name }}
-    <h1>{{ humanize $category.name | title }}</h1>
+    <h2 id="{{ $category.name }}">{{ humanize $category.name | title }}</h2>
     <ul>
       {{ range ($pages.ByDate.ByParam "rating").Reverse }}
       {{ .Render "li" }}
