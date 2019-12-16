@@ -25,10 +25,10 @@
       </div>
       <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="{{ "/" | absURL }}">Home</a>
-          <a class="navbar-item" href="{{ "books/" | absURL }}">Books</a>
-          <a class="navbar-item" href="{{ "tags/" | absURL }}">Tags</a>
-          <a class="navbar-item" href="{{ "now/" | absURL }}">Now</a>
+          <a class="navbar-item is-tab {{if eq .RelPermalink "/"}}is-active{{ end }}" href="{{ "/" | absURL }}">Home</a>
+          <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/books/"}}is-active{{ end }}" href="{{ "books/" | absURL }}">Books</a>
+          <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/tags/"}}is-active{{ end }}"href="{{ "tags/" | absURL }}">Tags</a>
+          <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/now"}}is-active{{ end }}" href="{{ "now/" | absURL }}">Now</a>
         </div>
         <div class="navbar-end">
           <form action="https://www.google.com/search" method="get">
