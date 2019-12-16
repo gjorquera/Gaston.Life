@@ -8,7 +8,7 @@
     {{ .Content }}
 
     {{ range .Pages.GroupByParam "category" }}
-    <h1>{{ humanize .Key }}</h1>
+    <h1>{{ humanize .Key | title }}</h1>
     <ul>
       {{ range (.Pages.ByDate.ByParam "rating").Reverse }}
       {{ .Render "li" }}
