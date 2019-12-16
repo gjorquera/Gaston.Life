@@ -2,6 +2,8 @@
 title: Don't Make Me Think
 author: Steve Krug
 category: programming
+tags:
+- programming
 description: >
   Follow the directives explained in this book to build usable software. It's
   short but full of examples, knowledge, and tips. It'll help you make software

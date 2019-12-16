@@ -2,6 +2,8 @@
 title: Love Yourself Like Your Life Depends On It
 author: Kamal Ravikant
 category: other
+tags:
+- other
 description: >
   Short book that emphasizes the importance of loving yourself and exercises to
   improve your self-love. Repetitive with multiple references to the author.

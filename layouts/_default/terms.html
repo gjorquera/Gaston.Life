@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article>
+  <header class="content">
+    <h1 class="title is-1">{{ humanize .Title }}</h1>
+    <p>{{ .Description }}</p>
+  </header>
+  <main class="content">
+    {{ .Content }}
+
+    <ul>
+      {{ range .Data.Terms.ByCount }}
+      <li><a href="{{ .Page.Permalink }}">{{ humanize .Page.Title }}</a> ({{ .Count }})</li>
+      {{ end }}
+    </ul>
+  </main>
+</article>
+{{ end }}

@@ -2,6 +2,8 @@
 title: Ego is the Enemy
 author: Ryan Holiday
 category: stoicism
+tags:
+- stoicism
 description: >
   Personal skill, effort, and consistency is only a small part of success. We're
   not that good; we need other people, we need luck. Don't let ego make you

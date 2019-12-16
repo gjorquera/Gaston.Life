@@ -2,6 +2,8 @@
 title: The Obstacle is the Way
 author: Ryan Holiday
 category: stoicism
+tags:
+- stoicism
 description: >
   Explains the three main stoic disciplines, perception, action, and will.
   Obstacles are not there to stop you, but to show you the correct path. The

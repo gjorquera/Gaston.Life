@@ -2,6 +2,8 @@
 title: Convict Conditioning
 author: Paul Wade
 category: athletics
+tags:
+- athletics
 description: >
   Explains what calisthenics is and proposes a simple but complete program that
   only requires time and commitment. No equipment, no excuses, only hard work.

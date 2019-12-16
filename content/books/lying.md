@@ -2,6 +2,8 @@
 title: Lying
 author: Sam Harris
 category: relationships
+tags:
+- relationships
 description: >
   Defines “lying” and explains how to be honest all the time. Even though it
   might seem trivial, it's a lot harder than it seems. Includes several examples

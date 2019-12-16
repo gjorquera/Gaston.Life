@@ -2,6 +2,8 @@
 title: The Total Money Makeover
 author: Dave Ramsey
 category: other
+tags:
+- other
 description: >
   Doesn't have new information and the author knows it. It's main value is the
   simple (although not easy) 7 step plan. It's a detailed plan to helps you to,

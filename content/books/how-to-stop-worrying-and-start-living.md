@@ -2,6 +2,8 @@
 title: How to Stop Worrying and Start Living
 author: Dale Carnegie
 category: stoicism
+tags:
+- stoicism
 description: >
   Forget yesterday and don't think about tomorrow. Focus on today. Accept the
   worst and improve from there.

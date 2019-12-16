@@ -16,7 +16,7 @@ related:
   includeNewer: true
   toLower: true
   indices:
-  - name: categories
+  - name: tags
     weight: 100
   - name: date
     pattern: 200601

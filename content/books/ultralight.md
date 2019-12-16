@@ -2,6 +2,8 @@
 title: Ultralight
 author: Leo Babauta
 category: minimalism
+tags:
+- minimalism
 description: >
   Minimalism applied to travel. Good and actionable ideas to make your travels
   lighter, less stressful, and more enjoyable. It's up to you to try out

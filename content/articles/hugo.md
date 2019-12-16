@@ -1,6 +1,8 @@
 ---
 title: "Hugo: From Zero to One"
 category: meta
+tags:
+- meta
 description: >
   A (non magical) quickstart guide to build a personal website from scratch
   using Hugo.

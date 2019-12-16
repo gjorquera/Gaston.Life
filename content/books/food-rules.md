@@ -2,6 +2,8 @@
 title: Food Rules, An Eater's Manual
 author: Michael Pollan
 category: athletics
+tags:
+- athletics
 description: >
   A handbook more than a book with simple easy to follow rules to know what and
   how to eat. A much needed guidance in a world full of things we can digest but

@@ -2,6 +2,8 @@
 title: Simpler
 author: Mike Burns
 category: minimalism
+tags:
+- minimalism
 description: >
   Explains the importance of being a minimalist. People are more important than
   things. Time is more important than things. Minimalism is a process not an
