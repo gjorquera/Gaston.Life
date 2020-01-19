@@ -8,9 +8,9 @@
     {{ .Content }}
 
     {{ $all_pages := .Pages }}
-    {{ range $category := where $.Site.Data.categories "type" .Type }}
-    {{ with $pages := where $all_pages ".Params.category" $category.name }}
-    <h2 id="{{ $category.name }}">{{ humanize $category.name | title }}</h2>
+    {{ range $category := $.Site.Data.categories }}
+    {{ with $pages := where $all_pages ".Params.category" $category}}
+    <h2 id="{{ $category }}">{{ humanize $category | title }}</h2>
     <ul>
       {{ range ($pages.ByDate.ByParam "rating").Reverse }}
       {{ .Render "li" }}

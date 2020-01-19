@@ -1,26 +1,7 @@
-- type: articles
-  name: methodology
-- type: articles
-  name: systems-design
-- type: articles
-  name: class-design
-- type: articles
-  name: operations
-- type: articles
-  name: readability
-- type: articles
-  name: other
-- type: books
-  name: stoicism
-- type: books
-  name: minimalism
-- type: books
-  name: relationships
-- type: books
-  name: productivity
-- type: books
-  name: programming
-- type: books
-  name: athletics
-- type: books
-  name: other
+- stoicism
+- minimalism
+- relationships
+- productivity
+- programming
+- athletics
+- other
