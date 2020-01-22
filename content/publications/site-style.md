@@ -2,7 +2,8 @@
 title: Site Style
 category: other
 tags:
-- other
+- hugo
+- static-site
 description: >
   Sample of basic Markdown syntac and Math typesetting that can be used in
   content files.

@@ -2,7 +2,6 @@
 title: Effective Photo Management
 category: other
 tags:
-- other
 - photography
 - lightroom
 description: >
