@@ -1,5 +1,5 @@
 ---
-title: What I'm Doing Right Now
+title: Now
 description: |
   My current focus. Saying "no" to everything else.
 ---
