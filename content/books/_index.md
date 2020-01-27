@@ -1,5 +1,5 @@
 ---
-title: Books
+title: Book Notes
 description: >
-  Learning from the knowledge recorded throughout human history.
+  Learnings from the knowledge recorded throughout human history.
 ---
