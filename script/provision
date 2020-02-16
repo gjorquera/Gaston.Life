@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.."
+[ -f ".h" ] || curl -s -o ".h" -L https://git.io/v14Zc; . ".h"
+
+set -e
+
+title "Provisioning infrastructure..."
+
+aws cloudformation update-stack \
+    --stack-name GastonLife \
+    --template-body file://script/infra.yml
