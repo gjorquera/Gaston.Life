@@ -10,23 +10,12 @@ After thinking for a long time, I realized that I was doing too many different
 things without a common theme. This meant that I couldn't transfer knowledge nor
 skills from the different things I was trying out.
 
-So, I decided that I will focus on two things:
-1. Core habits: Essential habits I have to force myself to do every day.
-1. Extended habits: Desirable habits that I can skip every once in a while when
-unexpected things happen.
+So, I decided that I will only focus on:
 
-# Core Habits
-
-- Eat. Plan and prepare daily healthy meals and keep track.
-- Exercise. Do calisthenics and jog for 20 minutes to maintain.
-- Work. Do enough to feel good about my work but remember that there will always
-  be more work than time.
-
-# Extended Habits
-
-- Creativity. Travel photography.
-- Exercise. Indoor and rock climbing.
-- Work. µvim and software maintainability.
-- Sharing. Consolidate all my learnings and results here.
+1. Health: Build habits and routines to improve my sleep, meals, and exercises
+  so that I can perform better at indoor climbing.
+1. Work: Improve and be effective during business hours remembering that there
+  will always be more work than time.
+1. Sharing: Consolidate my blueprints, plans, and learnings on this site.
 
 [now]: http://nownownow.com/about
