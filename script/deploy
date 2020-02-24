@@ -12,13 +12,7 @@ title "Building site..."
 
 rm -rf public/*
 hugo
-cd public
-git add .
-git commit -m "Site build $DATE"
 
-title "Deploying site to GitHub..."
+title "Deploying site to AWS..."
 
-git push origin master
-cd ..
-git add public
-git commit -m "Site build $DATE"
+aws s3 sync public/ s3://gjorquera.us-east-1.gastonlife-data --delete

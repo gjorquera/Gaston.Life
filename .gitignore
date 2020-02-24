@@ -1,3 +1,4 @@
 .cache.*
 .h
 resources/
+public/
