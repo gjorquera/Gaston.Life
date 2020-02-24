@@ -28,7 +28,7 @@
         <div class="navbar-start">
           <a class="navbar-item is-tab {{if eq .RelPermalink "/"}}is-active{{ end }}" href="{{ "/" | absURL }}">Home</a>
           <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/books/"}}is-active{{ end }}" href="{{ "books/" | absURL }}">Books</a>
-          <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/publications/"}}is-active{{ end }}" href="{{ "publications/" | absURL }}">Publications</a>
+          <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/writings/"}}is-active{{ end }}" href="{{ "writings/" | absURL }}">Writings</a>
           <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/tags/"}}is-active{{ end }}"href="{{ "tags/" | absURL }}">Tags</a>
           <a class="navbar-item is-tab {{if hasPrefix .RelPermalink "/now"}}is-active{{ end }}" href="{{ "now/" | absURL }}">Now</a>
         </div>
