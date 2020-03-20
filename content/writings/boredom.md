@@ -7,6 +7,8 @@ tags:
 description: >
   Boredome triggers creativity. Don't kill it by mindlessly filling in every
   second of your day.
+aliases:
+- /publications/boredom
 date: 2015-11-27
 ---
 

@@ -9,6 +9,8 @@ description: >
   wealth of knowledge. It's very deep, touching hard topics of software
   maintainability, with real life examples. It'll get you to the next level.
 rating: 5
+aliases:
+- /books/growing-object-oriented-programming-guided-by-tests
 date: 2016-08-30
 amazon: https://amzn.to/2Nmb617
 ---

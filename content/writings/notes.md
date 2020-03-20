@@ -7,6 +7,9 @@ tags:
 description: >
   How to internalize things read from books by highlighting the well explained
   and the non intuitive and converting them into directives.
+aliases:
+- /publications/learning-from-books
+- /publications/notes
 date: 2015-10-02
 ---
 

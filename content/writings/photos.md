@@ -7,6 +7,10 @@ tags:
 description: >
   Photography is not only about shooting. There is a process, an important
   process, that must happen after you shoot if you want to improve.
+aliases:
+- /articles/effective-photo-management
+- /publications/effective-photo-management
+- /publications/photos
 date: 2015-09-14
 ---
 

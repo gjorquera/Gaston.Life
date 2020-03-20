@@ -8,6 +8,10 @@ tags:
 description: >
   How to use Todoist and The Pomodoro Technique together for the ultimate
   productivity workflow.
+aliases:
+- /articles/todoist-and-pomodoros
+- /publications/todoist
+- /publications/todoist-and-pomodoros
 date: 2014-12-11
 ---
 

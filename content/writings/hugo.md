@@ -7,6 +7,11 @@ tags:
 description: >
   A (non magical) quickstart guide to build a personal website from scratch
   using Hugo.
+aliases:
+- /articles/hugo
+- /articles/hugo-from-zero-to-one
+- /publications/hugo
+- /publications/hugo-from-zero-to-one
 date: 2019-12-14
 ---
 

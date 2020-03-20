@@ -7,6 +7,10 @@ tags:
 description: >
   Sample of basic Markdown syntac and Math typesetting that can be used in
   content files.
+aliases:
+- /articles/site-style
+- /articles/style
+- /publications/site-style
 date: 2019-12-11
 toc: false
 ---

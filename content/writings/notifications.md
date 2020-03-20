@@ -7,6 +7,8 @@ tags:
 description: >
   Completely disable all your phone notifications to get some of that precious
   attention, energy, and focus back to your life.
+aliases:
+- /publications/notifications
 date: 2015-10-19
 ---
 

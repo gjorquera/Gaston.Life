@@ -8,6 +8,10 @@ tags:
 description: >
   Resting is as important as working. Never forget to rest so that you can
   consolidate learnings and be ready for a new day of work.
+aliases:
+- /articles/resting-into-productivity
+- /publications/resting
+- /publications/resting-into-productivity
 date: 2015-01-28
 ---
 
