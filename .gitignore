@@ -1,4 +1,5 @@
 .cache.*
 .h
-resources/
+logs/
 public/
+resources/
