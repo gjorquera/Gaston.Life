@@ -57,7 +57,7 @@ From the following source code:
 
 ### What About Jekyll?
 
-I used [Jekyll](jekyllrb.com/) for a few years but I moved to Hugo for the
+I used [Jekyll](https://jekyllrb.com/) for a few years but I moved to Hugo for the
 following reasons:
 
 * Speed: Jekyll started taking several seconds to build my site which slowed my
