@@ -1,5 +1,6 @@
 baseURL: https://gaston.life/
 enableGitInfo: true
+enableRobotsTXT: true
 
 params:
   toc: true
