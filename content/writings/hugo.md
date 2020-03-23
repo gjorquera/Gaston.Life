@@ -225,7 +225,7 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-Open [http://localhost:1313](http://localhost:1313) to see your new empty site.
+Open http://localhost:1313 to see your new empty site.
 
 #### Commit
 
@@ -297,8 +297,8 @@ Write this `layouts/index.html` file:
 {{ end }}
 ```
 
-You can now refresh [http://localhost:1313](http://localhost:1313) and you
-should see the ugly "Hello, World!".
+You can now refresh http://localhost:1313 and you should see the ugly "Hello,
+World!".
 
 It is now safe to keep the local webserver running and the tab open because Hugo
 will rebuild and refresh everything anytime it detects a change.
@@ -428,7 +428,7 @@ Write this `layouts/_default/single.html`:
 {{ end }}
 ```
 
-You can now visit [http://localhost:1313/now](http://localhost:1313/now).
+You can now visit http://localhost:1313/now.
 
 #### Menu
 
@@ -518,10 +518,8 @@ Some more interesting stuff.
 
 #### List Layout
 
-You can now access to
-[http://localhost:1313/articles/first](http://localhost:1313/articles/first) but
-[http://localhost:1313/articles](http://localhost:1313/articles) is blank
-because we don't have a list layout yet.
+You can now access to http://localhost:1313/articles/first but
+http://localhost:1313/articles is blank because we don't have a list layout yet.
 
 Write this `layouts/_default/list.html` file:
 
