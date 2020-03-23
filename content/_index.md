@@ -33,4 +33,4 @@ As an [introvert][intj], the best way to contact me is one-on-one via
 [photographer]: https://500px.com/gjorquera
 [programmer]: https://github.com/gjorquera
 [stackoverflow]: http://stackoverflow.com/users/96737/gaston
-[twitter]: https://twitter.com/gijorquera
+[twitter]: https://twitter.com/gaston_jorquera
