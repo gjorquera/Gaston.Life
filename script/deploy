@@ -4,14 +4,7 @@ cd "$(dirname $0)/.."
 
 set -e
 
-./script/bootstrap
-
-DATE="$(date)"
-
-title "Building site..."
-
-rm -rf public/*
-hugo
+./script/build
 
 title "Deploying site to AWS..."
 

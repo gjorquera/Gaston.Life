@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+cd "$(dirname $0)/.."
+[ -f ".h" ] || curl -s -o ".h" -L https://git.io/v14Zc; . ".h"
+
+./script/bootstrap
+
+title "Building site..."
+
+rm -rf public/*
+hugo
+
+title "Validating build..."
+
+err=0
+
+for f in $(find public -iname '*.html'); do
+    output=$(tidy -e -q $f 2>&1 | grep -vE "(trimming empty|discarding unexpected </html>)")
+    if [[ "$output" != "" ]]; then
+        err=1
+        echo "$f"
+        echo "$output"
+        echo
+    fi
+done
+
+exit $err

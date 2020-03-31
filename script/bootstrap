@@ -7,3 +7,4 @@ set -e
 title "Checking dependencies..."
 
 ensure "which hugo"
+ensure "which tidy"
