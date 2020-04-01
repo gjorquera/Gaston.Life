@@ -8,7 +8,7 @@
     {{ .Content }}
 
     {{ $all_pages := .Pages }}
-    {{ range $category := $.Site.Data.categories }}
+    {{ range $category := .Params.categories }}
     {{ with $pages := where $all_pages ".Params.category" $category}}
     <h2 id="{{ $category }}">{{ humanize $category | title }}</h2>
     <ul>
