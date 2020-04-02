@@ -1,6 +1,6 @@
 ---
-title: Access Modifiers as Design
-category: programming
+title: Access Modifiers
+category: class-design
 tags:
 - programming
 - class-design
