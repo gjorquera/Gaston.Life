@@ -1,6 +1,6 @@
 # Gaston Jorquera
 
-Code for [gaston.life](https://gaston.life).
+Source code for [gaston.life](https://gaston.life).
 
 ## Development
 
