@@ -1,5 +1,4 @@
 .cache.*
 .h
 logs/
-public/
 resources/

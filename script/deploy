@@ -6,6 +6,16 @@ set -e
 
 ./script/build
 
-title "Deploying site to AWS..."
+title "Deploying site to GitHub Pages..."
 
-aws s3 sync public/ s3://gjorquera.us-east-1.gastonlife-data --delete
+DATE="$(date)"
+
+cd public
+git add .
+git commit -m "Build $DATE"
+git push origin master
+
+cd ..
+git add .
+git commit -m "Build $DATE"
+git push origin master
