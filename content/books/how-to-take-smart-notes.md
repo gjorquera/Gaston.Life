@@ -6,7 +6,7 @@ tags:
 - productivity
 description: >
   A simple and actionable method to take notes that are helpful not only for
-  the current project but for life.
+  the current project but also for lifelong learners.
 rating: 5
 date: 2020-07-08
 amazon: https://www.amazon.com/dp/B06WVYW33Y
@@ -16,10 +16,10 @@ amazon: https://www.amazon.com/dp/B06WVYW33Y
 
 No intellectual work ever starts from scratch. It always starts with
 information stored somewhere used as a starting point, which is then
-transformed multiple times until it's final form.
+transformed multiple times until its final form.
 
 At the very least, you start with the information already in your head or the
-information obtained after a research.
+information obtained after doing research.
 
 Innovation and paradigm shifts are usually the consequence of many small steps
 in the right direction rather than one big idea.
@@ -45,7 +45,9 @@ following problems:
    original context, making them useless.
 1. They contain information about too many different things, making it
    hard to find the particular information you were looking for.
-1. They explain ideas or information that it's anecdotal or not important.
+1. They do not encourage proper isolation of ideas, which generates notes with
+   redundant information.
+1. They explain ideas or information that are anecdotal or not important.
 1. They get stored and then forgotten and never used again.
 
 We experience these problems days, weeks, months, or even years after writing
@@ -53,7 +55,7 @@ them. Therefore, the main challenge with writing good notes is the long
 feedback loop.
 
 This long feedback loop means that when we identify the problems that a given
-note has we have already forgotten the context and no longer understand the
+note has, we have already forgotten the context and no longer understand the
 note. Therefore, the notes are irreparable at that point.
 
 The Zettelkasten method shortens this feedback loop by forcing us to, among
@@ -71,7 +73,7 @@ write about it and (2) think about what this information means in the context
 of other knowledge.
 
 The Zettelkasten method proposes writing knowledge in well thought, personal,
-atomic, self contained, and concise permanent notes. The power of the
+atomic, self-contained, and concise permanent notes. The power of the
 Zettelkasten method comes from these permanent notes that, by connecting them
 between each other in their corresponding contexts, build a lattice of mental
 models.
@@ -103,9 +105,9 @@ that it can be used in our work.
 
 This is a form of deliberate practice for knowledge workers.
 
-#### Self Contained
+#### Self-Contained
 
-Write self contained permanent notes so that you can understand them even
+Write self-contained permanent notes so that you can understand them even
 after forgetting the context that they were taken from. This allows you to
 reference them in future work without necessarily having to go to the source.
 
@@ -147,7 +149,7 @@ After adding the permanent notes to your Zettelkasten, take a step back and
 decide what you think about it. Write your thoughts as independent permanent
 notes with the appropriate links to existing permanent notes.
 
-Only after you're able to decouple your thoughts with what you read, you'll be
+Only after you're able to decouple your thoughts with what you read; you'll be
 able to look for arguments that support other points of view.
 
 #### Links over Organization
@@ -168,7 +170,7 @@ note.
 
 #### Ignorant but Smart Audience
 
-Remember that you will be writing for yourself. But, you will probably read
+Remember that you will be writing for yourself. But you will probably read
 these notes in a point in time when you will have forgotten the context.
 
 Therefore, write the permanent notes thinking that your audience is ignorant
@@ -202,7 +204,7 @@ Zettelkasten:
 1. **Make fleeting notes.** Take notes about what you are thinking when
    reading. These are meant to be temporary notes to remind you about a
    particular idea. Always consider that the key aspect of this step is to
-   understand and prepare the information to be transfered into the
+   understand and prepare the information to be transferred into the
    Zettelkasten.
 1. **Make permanent notes.** Every day, go through the notes you made in the
    first step. For each note, think how it relates and connects to other
@@ -239,8 +241,8 @@ prescriptive. It allows quick adaptation while relieving you from the burden
 of remembering and keeping track of things.
 
 A plan, on the other hand, is rigid and expensive. You either spend too much
-energy following the plan to the letter or spend too much energy replanning
-every time you need to adapt.
+energy following the plan to the letter or spend too much energy planning over
+and over again every time you need to adapt.
 
 The Zettelkasten method provides structure to reading, understanding, and
 storing information in a way that can be reused over time.
