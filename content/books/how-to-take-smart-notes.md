@@ -26,17 +26,17 @@ in the right direction rather than one big idea.
 
 ## Don't Brainstorm, Take Notes Instead
 
-Brainstorming relies on the information that you can easily recall in that
+Brainstorming relies on the information that you can easily recall at that
 particular moment.
 
-Note taking, on the other hand, helps build an external system to store
+Note-taking, on the other hand, helps build an external system to store
 information and mental models that you can leverage and rely on even if you
 don't remember them.
 
 All you need is a system to effectively take notes and a process to review the
 notes when you need to work on a particular problem.
 
-## Effective Note Taking is Hard
+## Effective Note-Taking is Hard
 
 Taking notes without thinking about them in the long term usually has the
 following problems:
@@ -60,7 +60,7 @@ note. Therefore, the notes are irreparable at that point.
 
 The Zettelkasten method shortens this feedback loop by forcing us to, among
 other things, translate the information into notes written in our own words.
-This process encourages spending time to really understand the information
+This process encourages spending time to understand the information
 first instead of only collecting ideas that are useless in the long term.
 
 ## Zettelkasten Method
@@ -72,7 +72,7 @@ knowledge, we have to: (1) think about information long enough so that we can
 write about it and (2) think about what this information means in the context
 of other knowledge.
 
-The Zettelkasten method proposes writing knowledge in well thought, personal,
+The Zettelkasten method proposes writing knowledge in well-thought, personal,
 atomic, self-contained, and concise permanent notes. The power of the
 Zettelkasten method comes from these permanent notes that, by connecting them
 between each other in their corresponding contexts, build a lattice of mental
@@ -100,7 +100,7 @@ infrequently and only to support an idea already written with your own words.
 
 The original information is usually written in a way to support the arguments
 from the context it's embedded into and in a language that we may not use.
-Therefore, translating it using our own words help prepare the information so
+Therefore, translating it using our own words helps prepare the information so
 that it can be used in our work.
 
 This is a form of deliberate practice for knowledge workers.
@@ -127,10 +127,10 @@ Restricting yourself sparks creativity.
 
 #### Inherently Incomplete
 
-Your Zettelkasten is meant to compliment what you already know, not to be
+Your Zettelkasten is meant to complement what you already know, not to be
 complete.
 
-This means that some notes will be more extensive, if they are about something
+This means that some notes will be more extensive if they are about something
 you're not very familiar with, while other notes will mention a sentence.
 
 It's also expected for some notes to link to concepts defined in the
@@ -139,10 +139,10 @@ Zettelkasten while other notes mention concepts without additional links.
 #### Keep an Open Mind
 
 When reading, try to identify ideas that are interesting regardless of what
-argument they support. Be open for ideas that have worked as well as ideas
-that haven't worked and why.
+argument they support. Be open to ideas that have worked as well as ideas that
+haven't worked and why.
 
-Don't add your own thoughts and opinions with the information in the permanent
+Don't add your thoughts and opinions with the information in the permanent
 note.
 
 After adding the permanent notes to your Zettelkasten, take a step back and
@@ -154,7 +154,7 @@ able to look for arguments that support other points of view.
 
 #### Links over Organization
 
-Prefer having richer links between notes over a clear and well thought
+Prefer having richer links between notes over a clear and well-thought
 directory structure. Allow chains and clusters to emerge from your
 Zettelkasten organically via links. Allow yourself to roam about by following
 these links.
@@ -171,7 +171,7 @@ note.
 #### Ignorant but Smart Audience
 
 Remember that you will be writing for yourself. But you will probably read
-these notes in a point in time when you will have forgotten the context.
+these notes at a point in time when you will have forgotten the context.
 
 Therefore, write the permanent notes thinking that your audience is ignorant
 but smart. This means that you have to explain some things but consider that
@@ -183,18 +183,19 @@ Links are very important in a Zettelkasten, so I'll explain them before
 explaining the process.
 
 They are important because they allow knowledge to arise and new connections
-to be made, even if you didn't remember that particular connect. The idea of
-links is that when you're looking for something, you should follow them to the
-point where, eventually, you'll follow a link you didn't know was there and
-it was either exactly what you were looking for or a connection you didn't
+to be made, even if you didn't remember that particular connection. The idea
+of links is that when you're looking for something, you should follow them to
+the point where, eventually, you'll follow a link you didn't know was there
+and it was either exactly what you were looking for or a connection you didn't
 know was there but relevant to your current search.
 
 There are different types of links:
 
 1. **Keywords.** These are implemented as tags in a note. Keywords are used to
-   group similar things together over time.
+   group similar things over time.
 1. **Explicit link.** One note can explicitly link another note. It can link a
-   note that came from a different source and written at a different time.
+   note that came from a different source and that was written at a different
+   time.
 
 ### Process
 
@@ -224,7 +225,7 @@ Zettelkasten:
 1. **Index this note.** Add this note to one or more indexes or entry points
    for a particular topic in your Zettelkasten to make sure that you can find
    this particular note if you wanted to.
-1. **Dedupe.** At some point it will happen that a new idea you just had was
+1. **Dedupe.** At some point, it will happen that a new idea you just had was
    already in your Zettelkasten. If this happens, realize that these things
    are normal. Look at your old note, evaluate the differences, and improve it
    with the new information you now have.
@@ -232,7 +233,7 @@ Zettelkasten:
    you have; you won't find what you don't have. Make it a habit of always
    asking yourself what is missing, what point of view are you not seeing.
 
-## Structure over Planning
+## Prefer Structure over Planning
 
 Prefer having a good structure over planning.
 
@@ -249,13 +250,13 @@ storing information in a way that can be reused over time.
 
 ## Focus on the Process
 
-Most knowledge work requires considerable amount of energy and time. Focus on
-the process rather than on the results.
+Most knowledge work requires a considerable amount of energy and time. Focus
+on the process rather than on the results.
 
 Set yourself periodic goals, like writing three Zettelkasten notes a day, so
 that you can make consistent progress.
 
-## Writing Process Based a Zettelkasten
+## Writing Process Based on a Zettelkasten
 
 Transforming existing pieces of writing into a finished document is
 considerably easier than trying to assemble the whole document in your head.
@@ -263,19 +264,19 @@ considerably easier than trying to assemble the whole document in your head.
 The following process explains how to write a document based on your
 Zettelkasten:
 
-1. **Maintain a Zettelkasten.** When reading and researching, build and
+1. **Maintain a Zettelkasten.** When reading and researching, build, and
    maintain your own Zettelkasten.
-1. **Develop your research bottom up.** Look at your Zettelkasten and see
+1. **Develop your research bottom-up.** Look at your Zettelkasten and see
    what's there, what's missing, what points are contradicting, what questions
    it generates, etc. Do not brainstorm. Look for clusters in your
    Zettelkasten instead.
 1. **Read more.** Seek more information that both strengthens and challenges
    your arguments. Follow the Zettelkasten Process to incorporate the
    information from this new research.
-1. **Decide a topic.** After some time, you'll have enough research and ideas
-   in your Zettelkasten to be able to decide a topic to write about. This
-   topic must come from your Zettelkasten, not from some random question you'd
-   like to answer.
+1. **Decide on a topic.** After some time, you'll have enough research and
+   ideas in your Zettelkasten to be able to decide a topic to write about.
+   This topic must come from your Zettelkasten, not from some random question
+   you'd like to answer.
 1. **Collect all relevant notes.** Go through your Zettelkasten and follow the
    links to collect all the notes relevant to the topic you want to discuss.
    Copy them somewhere where you can work on them without modifying your
@@ -297,7 +298,7 @@ Zettelkasten:
 Proofreading is the process of reviewing and editing your work so that it can
 be understood by somebody reading it for the first time.
 
-To do an effective proofreading, follow these guidelines:
+For effective proofreading, follow these guidelines:
 
 1. Put yourself in the position of a dispassionate reader.
 1. Try to ignore what you know and evaluate only what it's written.
